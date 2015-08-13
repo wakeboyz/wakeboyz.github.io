@@ -1,0 +1,28 @@
+{
+  "name": "wfmffl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conorhastings/can-you-date-me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conorhastings/can-you-date-me/issues"
+  },
+  "homepage": "https://github.com/conorhastings/can-you-date-me",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "babel-core": "^5.8.21",
+    "babel-loader": "^5.3.2",
+    "immutable": "^3.7.4",
+    "react": "^0.13.3",
+    "redux": "^0.12.0",
+    "webpack": "^1.11.0"
+  }
+}
