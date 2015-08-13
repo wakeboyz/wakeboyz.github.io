@@ -23,6 +23,12 @@ var ShowCase = React.createClass({
 					hoverImage: "joe-hover.png"
 				},
 				{
+					name: "Bryan",
+					tagline: "Tinder pundit and passive aggressive tweeter. RI was unavailable to join the fantasy league.",
+					initImage: "bryan.png",
+					hoverImage: "bryan-hover.png"
+				},
+				{
 					name: "Perry",
 					tagline: "Recently Dateable.",
 					initImage: "perry.png",
@@ -33,12 +39,6 @@ var ShowCase = React.createClass({
 					tagline: "Most likely to pick up players from the waiver wire. Also Lauren...",
 					initImage: "zach.png",
 					hoverImage: "zach-hover.png"
-				},
-				{
-					name: "Bryan",
-					tagline: "Tinder pundit and passive aggressive tweeter. RI was unavailable to join the fantasy league.",
-					initImage: "bryan.png",
-					hoverImage: "bryan-hover.png"
 				},
 				{
 					name: "Brad",
