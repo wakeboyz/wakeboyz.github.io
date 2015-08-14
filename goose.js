@@ -26,7 +26,7 @@ var Goose = React.createClass({
 	},
 
 	componentDidMount: function() {
-		goose = window.setInterval(this.randomGoosePosition, 200);
+		goose = window.setInterval(this.randomGoosePosition, 400);
 	},
 
 	componentWillUnMount: function() {
