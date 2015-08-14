@@ -1,5 +1,6 @@
 import React from "react";
 import Person from "./person";
+import Goose from "./goose";
 
 var ShowCase = React.createClass({
 	getInitialState: function() {
@@ -76,20 +77,33 @@ var ShowCase = React.createClass({
 					initImage: "russell.png",
 					hoverImage: "russell-hover.png"
 				}
-			]};
+			],
+			gooseOn: false
+		};
+	},
+
+	toggleGoose: function() {
+		this.setState({
+			gooseOn: !this.state.gooseOn
+		});
 	},
 
 	render: function() {
 		var people = this.state.people.map((person) => {
 			return <Person key={person.name} {...person} />;
 		});
-
+		var goose = <Goose />;
+		var renderItem = people;
+		if(this.state.gooseOn) {
+			renderItem = goose;
+		}
 		return (
 			<div>
 				<div style={{color: "#000000", backgroundImage: "url(./images/wf.png)", width:"200px", height:"140px", display: "inline-block"}}></div>
 				<div style={{color: "#000000", fontFamily: "'Yellowtail', cursive", fontSize: "50px", display: "inline-block"}}>Wake Forest Memorial Fantasy Football League</div>
+				<div onClick={this.toggleGoose} style={{cursor: "pointer", color: "#000000", backgroundImage: "url(./images/goose.png)", width:"100px", height:"131px", display: "inline-block"}}></div>
 				<div style={{display: "flex", flexWrap: "wrap", marginLeft: "auto", backgroundColor: "#9E7E38"}}>
-					{people}
+					{renderItem}
 				</div>
 			</div>
 		);
