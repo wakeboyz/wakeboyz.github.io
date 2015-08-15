@@ -67,7 +67,7 @@ var ShowCase = React.createClass({
 				},
 				{
 					name: "Bert",
-					tagline: "JOE WRITE SOMETHING...Has spent the last two years of his life acting out Lonely Island's I Just Had Sex video.",
+					tagline: "Has spent the last two years of his life acting out Lonely Island's I Just Had Sex video.",
 					initImage: "bert.png",
 					hoverImage: "bert-hover.png"
 				},
