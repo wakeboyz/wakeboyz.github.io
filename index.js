@@ -37,7 +37,7 @@ var ShowCase = React.createClass({
 				},
 				{
 					name: "Zach",
-					tagline: "Most likely to pick up players from the waiver wire. Also Lauren...",
+					tagline: "Let me see you sweat.",
 					initImage: "zach.png",
 					hoverImage: "zach-hover.png"
 				},
