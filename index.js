@@ -100,7 +100,7 @@ var ShowCase = React.createClass({
 		return (
 			<div>
 				<div style={{color: "#000000", backgroundImage: "url(./images/wf.png)", width:"200px", height:"140px", display: "inline-block"}}></div>
-				<div style={{color: "#000000", fontFamily: "'Yellowtail', cursive", fontSize: "50px", display: "inline-block"}}>Wake Forest Memorial Fantasy Football League</div>
+				<div style={{color: "#000000", fontFamily: "'Yellowtail', cursive", fontSize: "50px", display: "inline-block"}}>Wake Boyz Fantasy Football League</div>
 				<div onClick={this.toggleGoose} style={{cursor: "pointer", color: "#000000", backgroundImage: "url(./images/goose.png)", width:"100px", height:"131px", display: "inline-block"}}></div>
 				<div style={{display: "flex", flexWrap: "wrap", marginLeft: "auto", backgroundColor: "#9E7E38"}}>
 					{renderItem}
@@ -108,8 +108,6 @@ var ShowCase = React.createClass({
 			</div>
 		);
 	}
-
-
 });
 
 React.render(<ShowCase /> , document.getElementById("app"));
