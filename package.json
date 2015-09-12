@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack -p"
+    "build": "./node_modules/.bin/webpack -p",
+    "dev": "./node_modules/.bin/webpack --watch --progress"
   },
   "repository": {
     "type": "git",

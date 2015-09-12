@@ -82,6 +82,23 @@ var ShowCase = React.createClass({
 		};
 	},
 
+	componentDidMount: function() {
+		if(window.webkitSpeechRecognition) {
+			let recognizeSpeech = new webkitSpeechRecognition();
+			recognizeSpeech.continuous = true;
+			recognizeSpeech.lang = "en-US";
+			recognizeSpeech.start();
+			recognizeSpeech.onresult = (e) => {
+				let resultsLength = e.results.length;
+				let recognizedSpeech = e.results[resultsLength - 1][0].transcript;
+				let isGoose = recognizedSpeech === "goose";
+				if(isGoose) {
+					this.setState({gooseOn: true});
+				}
+			};
+		}
+	},
+	
 	toggleGoose: function() {
 		this.setState({
 			gooseOn: !this.state.gooseOn
