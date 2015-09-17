@@ -6,7 +6,8 @@ var Goose = React.createClass({
 			vert: 0,
 			hor: 0,
 			vertDirection: "top",
-			horDirection: "left"
+			horDirection: "left",
+			showing: false
 		}
 	},
 
@@ -17,19 +18,27 @@ var Goose = React.createClass({
 		var positionsHor = ["right", "left"];
 		var positionTypeVert = positionsVert[Math.floor(Math.random() * 2)];
 		var positionTypeHor = positionsHor[Math.floor(Math.random() * 2)];
-		this.setState({
-			vert: randomPosVert,
-			hor: randomPosHor,
-			vertDirection: positionTypeVert,
-			horDirection: positionTypeHor
-		});
+		if(this.state.showing) {
+			this.setState({
+				vert: randomPosVert,
+				hor: randomPosHor,
+				vertDirection: positionTypeVert,
+				horDirection: positionTypeHor
+			});
+		}
 	},
 
 	componentDidMount: function() {
+		this.setState({
+			showing: true
+		});
 		goose = window.setInterval(this.randomGoosePosition, 400);
 	},
 
 	componentWillUnMount: function() {
+		this.setState({
+			showing: false
+		});
 		window.clearInterval(goose);
 	},
 
