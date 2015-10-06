@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Perry Translator</title>
+</head>
+<body>
+	<h1>Trenslate Your Text Into Something Perry Will Understand</h1>
+	<textarea id="a">Enter Text</textarea>
+	<button id="b">Translate</button>
+	<h3 id="p"></h3>
+	<script type="text/javascript">
+		document.getElementById("b").addEventListener("click", function(){
+			var text = document.getElementById("a").value.split(" ").map(function(){return "honk";});
+			document.getElementById("p").innerText = text.join(" ");
+		});
+	</script>
+</body>
+</html>
