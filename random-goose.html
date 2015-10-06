@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Random Goose Selector</title>
+</head>
+<body>
+	<button id="goose">PRESS HERE FOR A RANDOM GOOSE</button>
+	<h1 id="random"></h1>
+	<script type="text/javascript">
+		var geese = ["perry", "randy", "brad", "bert", "conor", "gabe", "bryan", "brad", "mike", "russell", "josh", "joe"];
+		document.getElementById("goose").addEventListener("click", function(){
+			var interval = setInterval(function(){
+				var goose = geese[Math.floor(Math.random()*geese.length)];
+				document.getElementById("random").innerText = goose;
+			}, 15);
+			setTimeout(function(){
+				clearInterval(interval);
+				document.getElementById("random").innerText = "perry";
+			},2000);
+		});
+	</script>
+</body>
+</html>
