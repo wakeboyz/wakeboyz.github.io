@@ -1,7 +1,7 @@
 import React from "react";
 import Person from "./person";
 import Goose from "./goose";
-
+import GooseTally from "./goose-tally";
 var ShowCase = React.createClass({
 	getInitialState: function() {
 		return {people: [
@@ -78,7 +78,24 @@ var ShowCase = React.createClass({
 					hoverImage: "russell-hover.png"
 				}
 			],
-			gooseOn: false
+			gooseOn: false,
+			gooseTally: [
+				{
+					name: "Perry",
+					total: 2,
+					head: "perry-head.png"
+				},
+				{
+					name: "Josh",
+					total: 1,
+					head: "josh-head.png"
+				},
+				{
+					name: "Russell",
+					total: 1,
+					head: "russell-head.png"
+				}
+			]
 		};
 	},
 
@@ -119,8 +136,11 @@ var ShowCase = React.createClass({
 				<div style={{color: "#000000", backgroundImage: "url(./images/wf.png)", width:"200px", height:"140px", display: "inline-block"}}></div>
 				<div style={{color: "#000000", fontFamily: "'Yellowtail', cursive", fontSize: "50px", display: "inline-block"}}>Wake Boyz Fantasy Football League</div>
 				<div onClick={this.toggleGoose} style={{cursor: "pointer", color: "#000000", backgroundImage: "url(./images/goose.png)", width:"100px", height:"131px", display: "inline-block"}}></div>
-				<div style={{display: "flex", flexWrap: "wrap", marginLeft: "auto", backgroundColor: "#9E7E38"}}>
-					{renderItem}
+				<div style={{display: "flex"}}>
+					<div style={{display: "flex", flexWrap: "wrap", marginLeft: "auto", backgroundColor: "#9E7E38", width: "80%"}}>
+						{renderItem}
+					</div>
+					<GooseTally geese={this.state.gooseTally} />
 				</div>
 			</div>
 		);
