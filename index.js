@@ -81,7 +81,7 @@ var ShowCase = React.createClass({
 			gooseOn: false,
 			gooseTally: [
 				{
-					name: "Perry",
+					name: "Perry - AKA Flight 370",
 					total: 2,
 					head: "perry-head.png"
 				},
