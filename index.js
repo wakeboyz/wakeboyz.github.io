@@ -94,6 +94,10 @@ var ShowCase = React.createClass({
 					name: "Russell",
 					total: 1,
 					head: "russell-head.png"
+				},
+				{
+					name: "Bert",
+					total: 1
 				}
 			]
 		};
