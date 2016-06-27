@@ -27,7 +27,7 @@ var Person = React.createClass({
 		imageStyle.backgroundImage =  `url(./images/${imageSrc})`;
 		var image = <div style={imageStyle}>{tagline}</div>
 		return (
-			<span style={{width: "255px", height: "255px", padding: "20px"}} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
+			<span style={{width: "255px", height: "255px", padding: "20px"}} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onTouchStart={this.toggleHover} onTouchEnd={this.toggleHover}>
 				{image}
 			</span>
 		);
