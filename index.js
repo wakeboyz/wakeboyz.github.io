@@ -77,6 +77,12 @@ var ShowCase = React.createClass({
 					tagline: "This man dates the cool Brad. The one we like.",
 					initImage: "russell.png",
 					hoverImage: "russell-hover.png"
+				},
+				{
+					name: "Dan",
+					tagline: "Expansion Team - The Florida Marlins of the Wake Boyz",
+					initImage: "dan.png",
+					hoverImage: "dan-hover.png"
 				}
 			],
 			gooseOn: false,
