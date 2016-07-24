@@ -2,6 +2,7 @@ import React from "react";
 import Person from "./person";
 import Goose from "./goose";
 import GooseTally from "./goose-tally";
+
 var ShowCase = React.createClass({
 	getInitialState: function() {
 		return {people: [
@@ -142,6 +143,11 @@ var ShowCase = React.createClass({
 						{renderItem}
 					</div>
 				</div>
+				<div 
+					style={{color: "#000000", fontFamily: "'Yellowtail', cursive", fontSize: "20px", display: "inline-block", width: "100%", textAlign: "center", cursor: "pointer"}}
+					onClick={() => window.open("./memorial.html", "_blank")}
+				>
+					Joshua Newell - In Memorium</div>
 			</div>
 		);
 	}

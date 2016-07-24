@@ -5,7 +5,8 @@ module.exports = {
 	context: path.join(__dirname),
 	devtool: "source-map",
 	entry: {
-        wfu: "./index.js"
+        wfu: "./index.js",
+        mem: "./memorial.js"
     },
 	output: {
 		path: path.join(__dirname),
@@ -16,7 +17,8 @@ module.exports = {
         loaders: [{
             test: /\.js?$/,
             loader: "babel",
-            include: path.join(__dirname)
+            include: path.join(__dirname),
+            exclude: /node_modules/
         }]
     }
 };
