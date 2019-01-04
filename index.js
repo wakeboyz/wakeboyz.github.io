@@ -145,25 +145,6 @@ var ShowCase = React.createClass({
       <div>
         <div
           style={{
-            color: "darkred",
-            fontFamily: "'Special Elite', cursive",
-            position: "absolute",
-            top: "30%",
-            left: "25%",
-            zIndex: 1000,
-            fontSize: "3.3em",
-            transform: "rotate(44deg)"
-          }}
-        >
-          <h1 style={{ WebkitTextStroke: 1, WebkitTextStrokeColor: "#000" }}>
-            BRING DOWN EMPEROR BRAD
-          </h1>
-          <h3 style={{ WebkitTextStroke: 1, WebkitTextStrokeColor: "#000" }}>
-            - the resistance
-          </h3>
-        </div>
-        <div
-          style={{
             color: "#000000",
             backgroundImage: "url(./images/wf.png)",
             width: "200px",
